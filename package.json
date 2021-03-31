@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^12.7.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta2",
+    "chokidar": "^3.0.0",
     "draft-js": "^0.11.7",
     "draft-to-html": "^0.0.1",
     "draftjs-to-html": "^0.9.1",
