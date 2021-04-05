@@ -26,7 +26,6 @@
 }
 
 @media screen and (max-width : 900px) {
-    
 
     .se-wrapper-inner {
         height: 200px !important;
@@ -41,4 +40,26 @@
 
 .story-post {
     margin-bottom: 35px;
+}
+
+.img-upload {
+    color: white;
+    font-weight: 600;
+}
+
+.text-area {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f3e6e8;
+    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+    font-size: 14px;
+    border: 5px solid #866b2d;
+}
+
+@media screen and (min-width : 900px) {
+    .text-area {
+        font-size: 18px;
+
+    }
+
 }

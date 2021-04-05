@@ -1,0 +1,78 @@
+.makeStyles-paper-5 {
+    background-color: white;
+    width: 44%;
+    border: 3px solid #faeeee !important;
+    height: 400px !important;
+    border-radius: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#feedback-form-title {
+    color: rgb(49, 125, 240) !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+
+.submit-btn-feedback-form {
+    background-color: rgb(255, 105, 105);
+    width: 90px;
+    padding: 1px;
+    border-radius: 20px !important;
+    margin-left: 30px;
+    margin-top: 30px;
+
+
+}
+
+.submit-btn-story-form:hover {
+    transform: scale(1.08);
+}
+
+.MuiButton-root {
+    color: white !important;
+}
+
+.feedback-text-area {
+    margin: 5px;
+
+}
+
+.rating {
+    margin-top: 10px;
+
+}
+
+
+@media screen and (max-width: 760px) {
+    #feedback-form-title {
+        font-size: 40px;
+
+    }
+
+    .makeStyles-paper-5 {
+        height: 380px !important;
+        width: 320px;
+        padding: 20px;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 976px) and (min-width: 762px) {
+
+    .makeStyles-paper-5 {
+        height: 400px !important;
+        padding: 30px;
+        width: 50%;
+    }
+
+
+
+}

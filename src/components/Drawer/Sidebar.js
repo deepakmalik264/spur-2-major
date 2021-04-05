@@ -10,8 +10,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import MobBar from './MobBar';
 import "./Sidebar.css";
-import  rocketLogo  from '../../images/icons8-rocket.gif'
-
+import Feedback from "./Feedback";
 
 const Nav = styled.div`
   background: #15171c;
@@ -48,9 +47,12 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
  
+
+
+
 const Sidebar = () => {
 
-
+  
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -65,50 +67,57 @@ const Sidebar = () => {
 
   return (
     <div className="drawer">
-      <IconContext.Provider value={{ color: '#fff' }}>
-      
+      <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-       
-          <NavIcon to='#'>
-
+          <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
-             
-            </NavIcon>
-     
-            <div className ="header_search">
-       <input onChange={onSearchChange} className="header_searchInput" type ="text"  placeholder=" search"/ > 
-       <SearchIcon className ="header_searchIcon"> </SearchIcon>
-       </div>
-       
-       <div className="head-rocket">
-       <div className="header-spur">
-         <h4> SPUR </h4>
-         
-       </div>
-       <img alt ="rocket-logo" className ="logo-rocket" src ="https://img.icons8.com/fluent/240/000000/rocket.png"/> 
-       </div>
-      <div className ="header-nav">
-         <div className="header_option">
-         <span className="sign"> Sign In</span>
-         </div>
-         <div className="header_option">
-         <span className="logout"> Logout</span>
-         </div>
-         <div className="header_option">
-         <span className="save"> Save</span>
-         </div>
-         <div className="basket">
-           <FavoriteIcon />
-           <span className="saved_num saved_count" > 0 </span>
-         </div>
-          
-         </div>
+          </NavIcon>
 
+          <div className="header_search">
+            <input
+              onChange={onSearchChange}
+              className="header_searchInput"
+              type="text"
+              placeholder=" search"
+            />
+            <SearchIcon className="header_searchIcon"> </SearchIcon>
+          </div>
+
+          <div className="head-rocket">
+            <div className="header-spur">
+              <Link to="/">
+                <h4> SPUR </h4>
+              </Link>
+            </div>
+            <img
+              alt="rocket-logo"
+              className="logo-rocket"
+              src="https://img.icons8.com/fluent/240/000000/rocket.png"
+            />
+          </div>
+          <div className="header-nav">
+            <div className="header_option">
+              <span className="sign"> Sign In</span>
+            </div>
+            <div className="header_option">
+              <Link to="/about">
+                <span className="logout"> The team </span>
+              </Link>
+            </div>
+
+            <div className="header_option feedback-btn">
+              <Feedback />
+            </div>
+            <div className="basket">
+              <FavoriteIcon />
+              <span className="saved_num saved_count"> 0 </span>
+            </div>
+          </div>
         </Nav>
-        <MobBar/>
+        <MobBar />
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <NavIcon to='#'>
+            <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
@@ -117,7 +126,6 @@ const Sidebar = () => {
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
-     
     </div>
   );
 };

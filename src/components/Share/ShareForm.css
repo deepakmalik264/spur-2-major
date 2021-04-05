@@ -8,11 +8,10 @@
 }
 
 .makeStyles-paper-4 {
-    background-color: #ffa69e;
-    background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
-    width: 50%;
-
-    height: 350px !important;
+    background-image: linear-gradient(352grad, #164364 0%, #373134 74%);
+    width: 44%;
+    border: 3px solid #faeeee !important;
+    height: 540px !important;
     border-radius: 10px;
     z-index: 10;
 
@@ -79,16 +78,44 @@
 }
 
 .submit-btn-story-form {
-    background-color: white;
+    background-color: rgb(255, 105, 105);
     width: 90px;
     padding: 1px;
     border-radius: 20px !important;
     margin-left: 30px;
+    margin-top: 20px;
+
+
 }
 
 .submit-btn-story-form:hover {
     transform: scale(1.08);
 }
+
+.MuiButton-root {
+    color: white !important;
+}
+
+.cat-select {
+    background-color: #e1e1e1;
+    width: 24.4%;
+    height: 39px;
+    border: 3px solid #8e8e8e;
+    border-radius: 9px;
+    position: relative;
+    left: 18%;
+    color: black;
+    padding: 6px;
+    text-align: center;
+    justify-content: space-around;
+    min-width: 24%;
+}
+
+.select-cat {
+    width: 100%;
+    display: flex;
+}
+
 
 @media screen and (max-width: 760px) {
     #story-form-title {
@@ -97,7 +124,7 @@
     }
 
     .makeStyles-paper-4 {
-        height: 440px !important;
+        height: 540px !important;
         width: 320px;
 
     }
@@ -115,6 +142,14 @@
     .text-muted {
         margin-left: 0px;
     }
+
+    .cat-select {
+        width: 60%;
+        position: relative;
+        left: 18%;
+    }
+
+
 }
 
 @media screen and (max-width: 976px) and (min-width: 762px) {
@@ -126,14 +161,30 @@
     }
 
     .makeStyles-paper-4 {
-        height: 450px !important;
+        height: 540px !important;
     }
 
     .pos-text {
-        margin-left: 50px;
+        margin-left: 23px;
     }
 
     .text-muted {
-        margin-left: 50px;
+        margin-left: 40px;
     }
+
+    .cat-select {
+        width: 50%;
+        position: relative;
+        left: 30%;
+    }
+
+    .name-text,
+    .email-text {
+        margin-left: 0px;
+    }
+}
+
+.progress{
+    height: 10px;
+    width: 100%;
 }

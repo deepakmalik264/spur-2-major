@@ -1,22 +1,20 @@
-import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as MdIcons from 'react-icons/md';
-import * as IoIcons from 'react-icons/io';
-import * as RiIcons from 'react-icons/ri';
-import * as FcIcons from 'react-icons/fc';
-import * as GiIcons from 'react-icons/gi';
-import * as BsIcons from 'react-icons/bs';
-
+import React from "react";
+import * as FaIcons from "react-icons/fa";
+import * as MdIcons from "react-icons/md";
+import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
+import * as GiIcons from "react-icons/gi";
+import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
   {
-    title: 'Engineering',
-    path: '/engineering',
+    title: "Engineering",
+    path: "/eng",
     icon: <FaIcons.FaGraduationCap />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
-    subNav: [
+    /* subNav: [
       {
         title: 'Computer Science',
         path: '/engineering/cse',
@@ -26,18 +24,18 @@ export const SidebarData = [
         title: 'Electronics and Communication',
         path: '/engineering/ece',
         icon: <FcIcons.FcElectronics />
-      },
+      }, 
       
-    ]
+    ] */
   },
   {
-    title: 'Exams',
-    path: '/exams',
+    title: "Exams",
+    path: "/exam",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
-    subNav: [
+    /* subNav: [
       {
         title: 'JEE',
         path: '/exams/jee',
@@ -65,63 +63,57 @@ export const SidebarData = [
         path: '/exams/CAT',
         icon: <IoIcons.IoIosPaper />
       }
-    ]
+    ]  */
   },
   {
-    title: 'Medicine',
-    path: '/medicine',
-    icon: <FaIcons.FaBriefcaseMedical />
+    title: "Medicine",
+    path: "/med",
+    icon: <FaIcons.FaBriefcaseMedical />,
   },
   {
-    title: 'Government',
-    path: '/government',
-    icon: <IoIcons.IoMdPeople />
+    title: "Government",
+    path: "/gov",
+    icon: <IoIcons.IoMdPeople />,
   },
   {
-    title: 'Management',
-    path: '/management',
+    title: "Management",
+
+    path: "/dummy",
     icon: <FaIcons.FaEnvelopeOpenText />,
-
-
-    
   },
   {
-    title: 'Research',
-    path: '/reasearch',
-    icon: <GiIcons.GiArchiveResearch />
+    title: "Research",
+    path: "/dummy",
+    icon: <GiIcons.GiArchiveResearch />,
   },
   {
-    title: 'Accountant',
-    path: '/accountant',
-    icon: <MdIcons.MdAccountBalance />
-    
-    
+    title: "Accountant",
+    path: "/dummy",
+    icon: <MdIcons.MdAccountBalance />,
   },
   {
-    title: 'Music',
-    path: '/music',
-    icon: <RiIcons.RiMusicFill />
-    
+    title: "Music",
+    path: "/dummy",
+    icon: <RiIcons.RiMusicFill />,
   },
   {
-    title: 'Fitness',
-    path: '/fitness',
+    title: "Fitness",
+    path: "/dummy",
     icon: <IoIcons.IoIosFitness />,
-
   },
   {
-    title: 'Influencer',
-    path: '/influencer',
-    icon: <FaIcons.FaPhotoVideo />
+    title: "Influencer",
+    path: "/dummy",
+    icon: <FaIcons.FaPhotoVideo />,
   },
   {
-    title: 'Author',
-    path: '/author',
-    icon: <BsIcons.BsBookHalf />
+    title: "Author",
+    path: "/dummy",
+    icon: <BsIcons.BsBookHalf />,
   },
   {
-    title: 'Business',
-    path: '/business',
-    icon: <IoIcons.IoIosBusiness />
-  }
+    title: "Business",
+    path: "/dummy",
+    icon: <IoIcons.IoIosBusiness />,
+  },
 ];

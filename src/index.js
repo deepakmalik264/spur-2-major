@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/storage"
 
 const firebaseConfig = {
   apiKey: "AIzaSyA67S_62e4VkydFWTifUUJhGPNvnl2Jq0E",
@@ -15,6 +16,7 @@ const firebaseConfig = {
   measurementId: "G-V5S37J4F56",
 };
 firebase.initializeApp(firebaseConfig);
+
 
 ReactDOM.render(
   <React.StrictMode>
